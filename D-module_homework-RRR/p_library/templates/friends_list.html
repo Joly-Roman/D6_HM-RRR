@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+  {% block title %}
+    <title>Список друзей</title>
+  {% endblock title %}
+
+{% block content %}
+    {% for friend in object_list %}
+        {% for book in friend.books.all %}
+        <ul class="list-group">
+            <li class="list-group-item friend-p">
+                Друг {{ friend.full_name }} взял книгу "{{ book.title }}", свяжитесь с ним по телефону {{ friend.phone }}
+
+            </li>
+        </ul>
+        {% endfor %}
+    {% endfor %}
+{% endblock content %}

@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block title %}
+    <title>Список книг</title>
+{% endblock title %}
+
+{% block content %}
+{% for book in object_list %}
+<p>{{ book.title }}</p>
+<img src="{{ book.get_image_url }}" class="book-img" alt="img">
+
+
+{% endfor %}
+
+{% endblock content %}

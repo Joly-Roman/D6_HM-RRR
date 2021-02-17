@@ -1,0 +1,24 @@
+.friend-p {
+    color: blue;
+
+}
+.publisher-name {
+    color: rgb(77, 76, 76);
+    font-weight: 700;
+}
+
+.publisher-book {
+    color: rgb(82, 165, 242);
+
+}
+
+.main-h {
+    text-align: center;
+
+}
+
+.book-img {
+    width: 300px;
+    height: 300px;
+
+}
